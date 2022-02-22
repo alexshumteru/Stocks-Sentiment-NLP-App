@@ -1,0 +1,7 @@
+ENV['SWIFT_VERSION'] = '5'
+platform :ios, '15.0'
+
+target 'StocksTweetsPredictor' do
+  use_frameworks!
+  pod 'TensorFlowLiteSwift', '~> 0.0.1-nightly'
+end
