@@ -33,9 +33,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="tweetInput:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Z8r-Hg-lzG"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsY-4o-MEw">
                                 <rect key="frame" x="131" y="587" width="129" height="64"/>
@@ -49,6 +46,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Predict"/>
+                                <connections>
+                                    <action selector="predictPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="M21-f6-zp3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,6 +56,7 @@
                     </view>
                     <connections>
                         <outlet property="inputTweet" destination="qiF-LE-jCa" id="tFl-2f-SsY"/>
+                        <outlet property="predict" destination="z1F-52-ejW" id="MLi-2U-rc9"/>
                         <outlet property="result" destination="TsY-4o-MEw" id="RVQ-fi-HZk"/>
                         <outlet property="tweetURL" destination="8tN-hK-Cwy" id="PIX-5S-cf2"/>
                     </connections>
