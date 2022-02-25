@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         inputTweet.becomeFirstResponder()
         result.text = ""
         inputTweet.delegate = self
+        let model = ModelHandler()
         // Do any additional setup after loading the view.
         // Load Model here
     }
