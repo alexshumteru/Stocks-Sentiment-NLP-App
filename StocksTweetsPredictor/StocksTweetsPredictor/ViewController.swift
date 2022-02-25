@@ -23,8 +23,12 @@ class ViewController: UIViewController {
         // Load Model here
     }
     @IBAction func predictPressed() {
+        
+        
+        
         print("\(inputTweet.text)")
-        let tweetInput = "\(inputTweet.text)"
+        
+        let tweetInput: String = inputTweet.text!
         
         let test = preprocess(inputText: tweetInput)
         
