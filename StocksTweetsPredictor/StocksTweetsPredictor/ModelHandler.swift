@@ -39,12 +39,12 @@ class ModelDataHandler: NSObject  {
       super.init()
     }
     
-    func runModel(wordVec: [Int]) -> [Double]? {
+    func runModel(wordVec: [Float32]) -> [Float32]? {
         let output: Tensor
         do {
             let inputTensor = try interpreter.input(at: 0)
             var data = Data(count: MemoryLayout.size(ofValue: wordVec))
-            var temp: Int
+            var temp: Float32
             for ele in wordVec{
                 temp = ele
                 var buffer = UnsafeBufferPointer(start: &temp, count: 1)
@@ -100,7 +100,7 @@ class ModelDataHandler: NSObject  {
     }
     
     
-    func preprocess(inputText: String) -> [Int] {
+    func preprocess(inputText: String) -> [Float32] {
         let punct : Set<Character> = ["!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"]
         
         let stopWords = fetchStopWords()
@@ -131,9 +131,9 @@ class ModelDataHandler: NSObject  {
         return wordVec
     }
     
-    private func sentenceToVector(sentence: [String], vocabDict: Dictionary<String,Int>, maxLength: Int = 20, unkToken: String = "__UNK__") -> [Int]{
+    private func sentenceToVector(sentence: [String], vocabDict: Dictionary<String,Int>, maxLength: Int = 20, unkToken: String = "__UNK__") -> [Float32]{
     
-        var wordVec = [Int]()
+        var wordVec = [Float32]()
         let unkID = vocabDict[unkToken]
         var wordID: Int?
         for word in sentence{
@@ -141,11 +141,11 @@ class ModelDataHandler: NSObject  {
             if wordID == nil{
                 wordID = unkID
             }
-            wordVec.append(wordID!)
+            wordVec.append(Float(wordID!))
         }
         let currLength = wordVec.count
         for _ in stride(from: currLength, to: maxLength, by: 1){
-            wordVec.append(0)
+            wordVec.append(0.0)
         }
         return wordVec
     }
