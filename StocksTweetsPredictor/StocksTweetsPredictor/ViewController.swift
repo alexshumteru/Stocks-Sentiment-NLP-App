@@ -7,9 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var inputTweet: UITextField!
+    @IBOutlet weak var tweet: UITextView!
     @IBOutlet weak var tweetURL: UITextField!
     @IBOutlet weak var predict: UIButton!
     @IBOutlet weak var result: UILabel!
@@ -18,21 +19,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        inputTweet.becomeFirstResponder()
+        tweet.becomeFirstResponder()
         result.text = ""
-        inputTweet.delegate = self
+        tweet.delegate = self
         
 
         // Do any additional setup after loading the view.
     }
     @IBAction func predictPressed() {
-        let tweetInput: String = inputTweet.text!
+        let tweetInput: String = tweet.text!
         if tweetInput != ""{
             let wordVec = model?.preprocess(inputText: tweetInput)
-            //let output = model?.runModel(sequence: sequence)
+            let res = model?.runModel(wordVec: wordVec!)
             //let sentiment = model?.postprocess(output: output)
             //result.text = sentiment
-            let res = model?.runModel(wordVec: wordVec!)
         }
     }
     

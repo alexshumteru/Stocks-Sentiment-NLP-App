@@ -47,12 +47,13 @@ class ModelDataHandler: NSObject  {
             var temp: Int
             for ele in wordVec{
                 temp = ele
+                var buffer = UnsafeBufferPointer(start: &temp, count: 1)
                 data.append(buffer)
             }
           try interpreter.copy(data, toInputAt: 0)
 
           // Run inference by invoking the `Interpreter`.
-          try interpreter.invoke()
+          try interpreter.invoke() 
           output = try interpreter.output(at: 0)
           print(output)
         } catch let error {

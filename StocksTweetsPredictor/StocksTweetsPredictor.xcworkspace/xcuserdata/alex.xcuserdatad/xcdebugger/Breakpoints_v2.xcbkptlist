@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D444FD8C-40F3-4A80-84F4-BCCA955C7491"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79FCF611-D135-4A0E-A662-8B3A4D32F971"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StocksTweetsPredictor/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "79FCF611-D135-4A0E-A662-8B3A4D32F971 - 29cca0d8a31882c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.model.getter : Swift.Optional&lt;StocksTweetsPredictor.ModelDataHandler&gt;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "79FCF611-D135-4A0E-A662-8B3A4D32F971 - 56d5f890449a6e35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.model.setter : Swift.Optional&lt;StocksTweetsPredictor.ModelDataHandler&gt;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "79FCF611-D135-4A0E-A662-8B3A4D32F971 - b5ed7f4317a2ee72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.model.modify : Swift.Optional&lt;StocksTweetsPredictor.ModelDataHandler&gt;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "79FCF611-D135-4A0E-A662-8B3A4D32F971 - 22635c81c9add5c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.model.modify : Swift.Optional&lt;StocksTweetsPredictor.ModelDataHandler&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "79FCF611-D135-4A0E-A662-8B3A4D32F971 - 9aaca0b745aec73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StocksTweetsPredictor.ViewController"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "79FCF611-D135-4A0E-A662-8B3A4D32F971 - ea3ae172d83444cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StocksTweetsPredictor.ViewController&gt;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "341">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2AD4277B-BD12-41FB-B14E-F64D9B78D603"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StocksTweetsPredictor/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2AD4277B-BD12-41FB-B14E-F64D9B78D603 - 29cca0d8a31882c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.model.getter : Swift.Optional&lt;StocksTweetsPredictor.ModelDataHandler&gt;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "2AD4277B-BD12-41FB-B14E-F64D9B78D603 - 56d5f890449a6e35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.model.setter : Swift.Optional&lt;StocksTweetsPredictor.ModelDataHandler&gt;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "2AD4277B-BD12-41FB-B14E-F64D9B78D603 - b5ed7f4317a2ee72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.model.modify : Swift.Optional&lt;StocksTweetsPredictor.ModelDataHandler&gt;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "2AD4277B-BD12-41FB-B14E-F64D9B78D603 - 22635c81c9add5c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.model.modify : Swift.Optional&lt;StocksTweetsPredictor.ModelDataHandler&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "2AD4277B-BD12-41FB-B14E-F64D9B78D603 - 9aaca0b745aec73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StocksTweetsPredictor.ViewController"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "2AD4277B-BD12-41FB-B14E-F64D9B78D603 - ea3ae172d83444cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StocksTweetsPredictor.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StocksTweetsPredictor.ViewController&gt;"
+                  moduleName = "StocksTweetsPredictor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Desktop/stock_nlp/StocksTweetsPredictor/StocksTweetsPredictor/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "341">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FEE9FD5-C82F-427E-A7CA-8494BB17A99F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StocksTweetsPredictor/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
