@@ -39,7 +39,7 @@ class ModelDataHandler: NSObject  {
       super.init()
     }
     
-    func runModel(wordVec: [Float32]) -> String? {
+    func runModel(wordVec: [Float32]) -> [Float32]? {
         let output: Tensor
         do {
             let inputTensor = try self.interpreter.input(at: 0)
@@ -48,12 +48,9 @@ class ModelDataHandler: NSObject  {
 
             try self.interpreter.invoke()
             output = try self.interpreter.output(at: 0)
-            var results = Array<Float32>(repeating: 0, count: output.data.count/MemoryLayout<Float32>.stride)
-            var _ = results.withUnsafeMutableBytes{output.data.copyBytes(to: $0)}
-            let maxConfidence = results.max() ?? -1
-            let maxIndex = results.firstIndex(of: maxConfidence) ?? -1
-            let stringResult = "\(labels[maxIndex])\n with confidence: \(maxConfidence)"
-            return stringResult
+            var probabilities = Array<Float32>(repeating: 0, count: output.data.count/MemoryLayout<Float32>.stride)
+            var _ = probabilities.withUnsafeMutableBytes{output.data.copyBytes(to: $0)}
+            return probabilities
         } catch let error {
           print("Failed to invoke the interpreter with error: \(error.localizedDescription)")
           return nil
@@ -61,6 +58,12 @@ class ModelDataHandler: NSObject  {
         
     }
     
+    func postprocess(probabilities: [Float32]) -> [String] {
+        let maxConfidence = probabilities.max() ?? -1
+        let maxIndex = probabilities.firstIndex(of: maxConfidence) ?? -1
+        let stringResult = [labels[maxIndex], "with confidence: \(maxConfidence)"]
+        return stringResult
+    }
     
     
     private func fetchStopWords() -> [String] {

@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var tweetURL: UITextField!
     @IBOutlet weak var predict: UIButton!
     @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var prob: UILabel!
     
     private var model: ModelDataHandler? = ModelDataHandler()
     
@@ -21,6 +22,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         tweet.becomeFirstResponder()
         result.text = ""
+        prob.text = ""
         tweet.delegate = self
         
 
@@ -30,8 +32,10 @@ class ViewController: UIViewController, UITextViewDelegate {
         let tweetInput: String = tweet.text!
         if tweetInput != ""{
             let wordVec = model?.preprocess(inputText: tweetInput)
-            let res = model?.runModel(wordVec: wordVec!)
-            result.text = res
+            let probabilies = (model?.runModel(wordVec: wordVec!))
+            let strResult = model?.postprocess(probabilities: probabilies!)
+            result.text = strResult?[0]
+            prob.text = strResult?[1]
         }
     }
     
