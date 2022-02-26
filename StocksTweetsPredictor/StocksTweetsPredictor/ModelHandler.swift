@@ -30,8 +30,8 @@ class ModelDataHandler: NSObject  {
         var options = Interpreter.Options()
       options.threadCount = threadCount
       do {
-        interpreter = try Interpreter(modelPath: modelPath, options: options)
-        try interpreter.allocateTensors()
+          self.interpreter = try Interpreter(modelPath: modelPath, options: options)
+          try self.interpreter.allocateTensors()
       } catch let error {
         print("Failed to create the interpreter with error: \(error.localizedDescription)")
         return nil
@@ -39,33 +39,27 @@ class ModelDataHandler: NSObject  {
       super.init()
     }
     
-    func runModel(wordVec: [Float32]) -> [Float32]? {
+    func runModel(wordVec: [Float32]) -> String? {
         let output: Tensor
         do {
-            let inputTensor = try interpreter.input(at: 0)
-            var data = Data(count: MemoryLayout.size(ofValue: wordVec))
-            var temp: Float32
-            for ele in wordVec{
-                temp = ele
-                var buffer = UnsafeBufferPointer(start: &temp, count: 1)
-                data.append(buffer)
-            }
-          try interpreter.copy(data, toInputAt: 0)
+            let inputTensor = try self.interpreter.input(at: 0)
+            let data = Data(buffer: UnsafeBufferPointer(start: wordVec, count: wordVec.count))
+            try self.interpreter.copy(data, toInputAt: 0)
 
-          // Run inference by invoking the `Interpreter`.
-          try interpreter.invoke() 
-          output = try interpreter.output(at: 0)
-          print(output)
+            try self.interpreter.invoke()
+            output = try self.interpreter.output(at: 0)
+            var results = Array<Float32>(repeating: 0, count: output.data.count/MemoryLayout<Float32>.stride)
+            var _ = results.withUnsafeMutableBytes{output.data.copyBytes(to: $0)}
+            let maxConfidence = results.max() ?? -1
+            let maxIndex = results.firstIndex(of: maxConfidence) ?? -1
+            let stringResult = "\(labels[maxIndex])\n with confidence: \(maxConfidence)"
+            return stringResult
         } catch let error {
           print("Failed to invoke the interpreter with error: \(error.localizedDescription)")
           return nil
         }
-
-        // Formats the results
-        return [0.0, 0.0]
+        
     }
-    
-    
     
     
     

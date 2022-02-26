@@ -31,8 +31,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         if tweetInput != ""{
             let wordVec = model?.preprocess(inputText: tweetInput)
             let res = model?.runModel(wordVec: wordVec!)
-            //let sentiment = model?.postprocess(output: output)
-            //result.text = sentiment
+            result.text = res
         }
     }
     
