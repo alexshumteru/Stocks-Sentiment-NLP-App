@@ -9,3 +9,4 @@ Here are sample views:
 <img src="https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img1.png" width="300" height="600">
 <img src="https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img2.png" width="300" height="600">
 
+The confidence level indicates the chance of output indicated by the app will be true. 
