@@ -39,6 +39,9 @@ class ViewController: UIViewController, UITextViewDelegate {
         }
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+            return .portrait
+    }
 }
 
 extension ViewController: UITextFieldDelegate {
