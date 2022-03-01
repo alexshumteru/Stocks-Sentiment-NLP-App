@@ -6,6 +6,6 @@ Using the NLP model developed, the app will output whether the stock will increa
 
 Here are sample views:
 
-![] (https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img1.png)
+![](https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img1.png)
 
-![] (https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img2.png)
+![](https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img2.png)
