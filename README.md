@@ -4,7 +4,7 @@
   <img src="https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img2.png" width="200" height="400">
 <p>
  
-# About
+## About
 
 A NLP model was developed using Convulotional Neural Network layer and deployed to this iOS app. By this NLP model, this app will predict  whether stock will increase or decrease with certain confidence level based on twitter. The confidence level indicates the chance of output indicated by the app will be true. 
   
