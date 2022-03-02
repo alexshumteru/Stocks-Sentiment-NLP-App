@@ -6,13 +6,7 @@
  
 ## About
 
-This is an IOS app which predicts whether stock will increase or decrease based on twitter input. To use this app properly, simply copy and paste the tweets posted by experts on twitter into the text input.
+A NLP model was developed using Convulotional Neural Network layer and deployed to this iOS app. By this NLP model, this app will predict  whether stock will increase or decrease with certain confidence level based on twitter. The confidence level indicates the chance of output indicated by the app will be true. 
+  
+## How to use
 
-Using the NLP model developed, the app will output whether the stock will increase or decrease. 
-
-Here are sample views:
-
-An example of negative tweet. 
-
-
-The confidence level indicates the chance of output indicated by the app will be true. 
