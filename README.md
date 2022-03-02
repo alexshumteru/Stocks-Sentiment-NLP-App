@@ -1,7 +1,7 @@
 # Stocks-Sentiment-NLP-App
 <p float="left">
-  <img src="https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img1.png" width="300" height="600">
-  <img src="https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img2.png" width="300" height="600">
+  <img src="https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img1.png" width="200" height="400">
+  <img src="https://github.com/alexshumteru/Stocks-Sentiment-NLP-App/blob/master/sample_img2.png" width="200" height="400">
 <p>
  
 ## About
